@@ -18,6 +18,8 @@ public class CommentController {
     public String addComment(@RequestBody Comment comment, @RequestParam Long postId) {
         commentService.addComment(comment,postId);
         System.out.println(299);
+
+         System.out.println("master class");
         return "Comment added successfully";
     }
 
