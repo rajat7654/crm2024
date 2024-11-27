@@ -17,6 +17,7 @@ public class CommentController {
     @PostMapping
     public String addComment(@RequestBody Comment comment, @RequestParam Long postId) {
         commentService.addComment(comment,postId);
+        System.out.println(299);
         return "Comment added successfully";
     }
 
